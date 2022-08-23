@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    list-style: none;
+}
+nav {
+    font-family: 'Poppins', sans-serif;
+    height: 80px;
+    width: 100%;
+    background-color: #063247;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+    user-select: none;
+}
+nav .header {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 10%;
+    user-select: none;
+}
+nav ul {
+    float:right;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li {
+    display: inline-block;
+    width: 170px;
+}
+nav ul li a {
+    box-sizing: border-box;
+    width: 170px;
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: white;
+    line-height: 80px;
+    font-size: 20px;
+    background-color: #063247;
+    transition: .5s linear;
+}
+nav ul li a:hover {
+    color: #23dbbd;
+}
+nav ul ul {
+    position: absolute;
+    display: block;
+    margin-top: 20px;
+    border-top: 3px solid #23dbbd;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transition: .5s linear;
+    margin-top: 0px;
+}
+nav ul ul li {
+    display: list-item;
+    width: 170px;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+}
+nav ul ul li a {
+    display: block;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+}
+nav ul ul ul {
+    border-top: none;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -50px;
+    left: 169px;
+}
+nav ul ul li a i {
+    margin-left: 50px;
+}
+section img {
+    background-size: cover;
+    height: 100vh;
+}
